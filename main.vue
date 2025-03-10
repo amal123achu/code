@@ -665,6 +665,15 @@ const createProject = () => {
     alert('Please fill in all fields.');
     return;
   }
+  else{
+    router.push({
+    name: 'owner', // Ensure the route name is correct
+    query: {
+      courseName: projectName.value,
+      courseDescription: projectDescription.value,
+    },
+  });
+
 
   console.log('Coursename:', projectName.value);
   console.log('Username:', fullname.value);
